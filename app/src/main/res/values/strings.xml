@@ -4,6 +4,7 @@
     <!--Headers-->
     <string name="hd_room">Select Room</string>
     <string name="hd_confirm">Confirmation</string>
+    <string name="hd_info">Booking Information</string>
 
     <!--Room Types-->
     <string name="rm_type1">Single Room</string>
@@ -14,5 +15,13 @@
     <!--Button Labels-->
     <string name="btntxt_next">Next</string>
     <string name="btntxt_back">Back</string>
+
+    <!--Form Labels-->
+    <string name="form_name">Name</string>
+    <string name="form_contact">Contact No.</string>
+    <string name="form_ckin">Date of Check-in</string>
+    <string name="form_ckout">Date of Check-out</string>
+    <string name="form_guest">No. of Guests</string>
+    <string name="form_room">Room Type</string>
 
 </resources>
