@@ -65,6 +65,8 @@ public class Form1 extends AppCompatActivity {
                 month = month + 1;
                 String date = day + "/" + month + "/" + year;
                 txtOut.setText(date);
+            }
+        };
     }
 }
 
