@@ -25,6 +25,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".Confirm"/>
+        <activity android:name=".Form"/>
+        <activity android:name=".Payment"/>
+        <activity android:name=".Ref"/>
+        <activity android:name=".RefNum"/>
+        <activity android:name=".Reserve"/>
+        <activity android:name=".Rooms"/>
+        <activity android:name=".Terms"/>
+
     </application>
 
 </manifest>
