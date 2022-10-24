@@ -3,6 +3,7 @@
 
     <!--Headers-->
     <string name="hd_room">Select Room</string>
+    <string name="hd_confirm">Confirmation</string>
 
     <!--Room Types-->
     <string name="rm_type1">Single Room</string>
