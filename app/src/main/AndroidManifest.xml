@@ -28,6 +28,7 @@
 
         <activity android:name=".Confirm"/>
         <activity android:name=".Form"/>
+        <activity android:name=".Form1"/>
         <activity android:name=".Payment"/>
         <activity android:name=".Ref"/>
         <activity android:name=".RefNum"/>
