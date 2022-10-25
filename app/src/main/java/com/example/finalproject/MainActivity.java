@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         else if(btnTxt.equals("View Reservation")){
-            Intent i = new Intent(this,Payment.class);
+            Intent i = new Intent(this,RefNum.class);
             startActivity(i);
         }
 

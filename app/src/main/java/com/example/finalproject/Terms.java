@@ -19,7 +19,7 @@ public class Terms extends AppCompatActivity {
         btnTxt = ((Button) v).getText().toString();
 
         if(btnTxt.equals("Accept")){
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, Form.class);
             startActivity(i);
         }
         else if(btnTxt.equals("Back")){

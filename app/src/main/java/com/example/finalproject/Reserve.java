@@ -25,7 +25,7 @@ public class Reserve extends AppCompatActivity {
         String btnBTHome;
         btnBTHome = ((Button) v).getText().toString();
 
-        if(btnBTHome.equals("Okay")){
+        if(btnBTHome.equals("Back to Home")){
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         }
