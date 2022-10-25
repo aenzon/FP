@@ -26,8 +26,8 @@ public class Ref extends AppCompatActivity {
         next= findViewById(R.id.btnHome);
 
         Random random = new Random();
-        randomNumber = random.nextInt(5000)+1;
-        reference.setText(String.valueOf(randomNumber));
+        randomNumber = random.nextInt(4999-1000)+1000;
+        reference.setText(String.valueOf(randomNumber+"001"));
 
     }
     public void showActivity(View v)
