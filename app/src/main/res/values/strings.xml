@@ -29,4 +29,7 @@
     <string name="form_guest">No. of Guests</string>
     <string name="form_room">Room Type</string>
 
+    <!--Notifications-->
+    <string name="inc_form">All fields are required</string>
+
 </resources>

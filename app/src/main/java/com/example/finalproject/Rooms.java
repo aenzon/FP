@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Rooms extends AppCompatActivity implements View.OnClickListener{
     public static String room;
+    public static double price;
+    private final static double[] rmPrices = {1000, 2000, 3000, 4000}; //to edit
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,15 +47,19 @@ public class Rooms extends AppCompatActivity implements View.OnClickListener{
         switch(v.getId()){
             case R.id.btnSingle:
                 room = getString(R.string.rm_type1);
+                price = Form.daysStay * rmPrices[0];
                 break;
             case R.id.btnDouble:
                 room = getString(R.string.rm_type2);
+                price = Form.daysStay * rmPrices[1];
                 break;
             case R.id.btnTriple:
                 room = getString(R.string.rm_type3);
+                price = Form.daysStay * rmPrices[2];
                 break;
             case R.id.btnQuad:
                 room = getString(R.string.rm_type4);
+                price = Form.daysStay * rmPrices[3];
                 break;
         }
         Intent i = new Intent(this, Confirm.class);
