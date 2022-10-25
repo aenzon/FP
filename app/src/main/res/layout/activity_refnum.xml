@@ -41,6 +41,7 @@
         android:id="@+id/btnNext"
         android:layout_width="143dp"
         android:layout_height="49dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:onClick="showActivity"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
