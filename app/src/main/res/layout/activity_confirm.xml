@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@android:color/background_dark">
 
     <TextView
         android:id="@+id/textView"
@@ -11,7 +12,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/hd_confirm"
         android:textAllCaps="false"
-        android:textColor="@android:color/primary_text_light"
+        android:textColor="@android:color/primary_text_dark"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,14 +26,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/form_name"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgRoom"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 
     <TextView
         android:id="@+id/txtNameLbl"
@@ -40,14 +41,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:text="Guest Name"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/imgRoom"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/textView10"
@@ -56,14 +57,14 @@
         android:layout_marginTop="13dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/form_ckin"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
 
     <TextView
         android:id="@+id/txtContactLbl"
@@ -71,14 +72,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:text="09987654321"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/txtNameLbl"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
 
     <TextView
         android:id="@+id/textView11"
@@ -86,14 +87,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/form_ckout"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
 
     <TextView
         android:id="@+id/txtCkinLbl"
@@ -102,14 +103,14 @@
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-light"
         android:text="01/01/2022"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/txtContactLbl"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
 
     <TextView
         android:id="@+id/textView12"
@@ -117,14 +118,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/form_guest"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753" />
 
     <TextView
         android:id="@+id/txtCkoutLbl"
@@ -132,14 +133,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:text="01/01/2022"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/txtCkinLbl"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
 
     <TextView
         android:id="@+id/textView13"
@@ -147,14 +148,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/form_room"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
 
     <TextView
         android:id="@+id/txtGuestLbl"
@@ -162,14 +163,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:text="0"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/txtCkoutLbl"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
 
     <TextView
         android:id="@+id/textView9"
@@ -178,14 +179,14 @@
         android:layout_marginTop="13dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/form_contact"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
 
     <TextView
         android:id="@+id/txtRoom"
@@ -194,34 +195,36 @@
         android:layout_marginStart="1dp"
         android:fontFamily="sans-serif-light"
         android:text="Single Room"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@android:color/secondary_text_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/txtGuestLbl"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
 
     <ImageView
         android:id="@+id/imgRoom"
-        android:contentDescription="selected room"
         android:layout_width="170dp"
         android:layout_height="137dp"
+        android:contentDescription="selected room"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/room1" />
 
     <Button
         android:id="@+id/btnToPay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/btntxt_next"
+        android:textColor="@android:color/secondary_text_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.721"
@@ -233,8 +236,10 @@
         android:id="@+id/btnToRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/btntxt_back"
+        android:textColor="@android:color/secondary_text_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.256"

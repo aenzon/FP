@@ -22,8 +22,8 @@ public class Payment extends AppCompatActivity {
             Intent i = new Intent(this, Ref.class);
             startActivity(i);
         }
-        if(btnTxt.equals("Type of rooms")){
-            Intent i = new Intent(this, Rooms.class);
+        if(btnTxt.equals("Back")){
+            Intent i = new Intent(this, Confirm.class);
             startActivity(i);
         }
         if(btnTxt.equals("Home")){
