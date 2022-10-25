@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/txtGRoom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.611" />
 
     <TextView
-        android:id="@+id/textView43"
+        android:id="@+id/txtGPax"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.545" />
 
     <TextView
-        android:id="@+id/textView42"
+        android:id="@+id/txtGCo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.454" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/txtGCi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/txtGNo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.253" />
 
     <TextView
-        android:id="@+id/textView39"
+        android:id="@+id/txtGName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -99,7 +99,7 @@
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048" />
