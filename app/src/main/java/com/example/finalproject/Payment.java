@@ -27,7 +27,7 @@ public class Payment extends AppCompatActivity {
         btnConfirm = findViewById(R.id.btn_Confirm);
         btnHome = findViewById(R.id.btn_Home);
 
-        String.valueOf(Rooms.amount);
+        txtTotal.setText(String.valueOf(Rooms.amount));
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,12 +46,11 @@ public class Payment extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 DecimalFormat form = new DecimalFormat("0.00");
 
                 Double change = (Double.parseDouble(txtTotal.getText().toString())) - Double.parseDouble(txtPayment.getText().toString());
                 txtChange.setText(form.format(change));
-
-                String.valueOf(Rooms.amount);
             }
         });
     }
