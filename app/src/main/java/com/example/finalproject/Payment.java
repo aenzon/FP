@@ -49,7 +49,7 @@ public class Payment extends AppCompatActivity {
 
                 DecimalFormat form = new DecimalFormat("0.00");
 
-                Double change = (Double.parseDouble(txtPayment.getText().toString())) - Double.parseDouble(txtTotal.getText().toString());
+                Double change = (Double.parseDouble(txtPayment.getText().toString())) - Rooms.amount;
                 txtChange.setText(form.format(change));
 
                 Intent i = new Intent(Payment.this, Ref.class);
