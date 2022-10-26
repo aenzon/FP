@@ -18,7 +18,7 @@ public class Payment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        txtTotal = findViewById(R.id.txt_Total);
+        txtTotal = findViewById(R.id.txt_TotIn);
         txtPayment = findViewById(R.id.txt_Payment);
         txtChange = findViewById(R.id.txt_Change);
         btnBack = findViewById(R.id.btn_Back);
@@ -35,6 +35,11 @@ public class Payment extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Payment.this, MainActivity.class);
+            }
+        });
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
             }
         });
     }
