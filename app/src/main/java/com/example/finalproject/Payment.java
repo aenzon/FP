@@ -39,6 +39,15 @@ public class Payment extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String total = txtTotal.getText().toString();
+                String payment = txtPayment.getText().toString();
+
+
+            }
+        });
     }
 
 
