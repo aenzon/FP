@@ -35,8 +35,9 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#68000000"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/rm_type1"
+                    android:text="@string/rmpc_type1"
                     android:textSize="16sp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -55,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#68000000"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/rm_type2"
+                    android:text="@string/rmpc_type2"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -75,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#68000000"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/rm_type3"
+                    android:text="@string/rmpc_type3"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -95,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#68000000"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/rm_type4"
+                    android:text="@string/rmpc_type4"
                     android:textSize="16sp" />
             </LinearLayout>
 

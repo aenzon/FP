@@ -14,6 +14,12 @@
     <string name="rm_type3">Triple Room</string>
     <string name="rm_type4">Quadruple Room</string>
 
+    <!--Room Types with price-->
+    <string name="rmpc_type1">Single Room\n(Php1,500/night)</string>
+    <string name="rmpc_type2">Double Room\n(Php2,500/night)</string>
+    <string name="rmpc_type3">Triple Room\n(Php3,500/night)</string>
+    <string name="rmpc_type4">Quadruple Room\n(Php4,500/night)</string>
+
     <!--Button Labels-->
     <string name="btntxt_next">Next</string>
     <string name="btntxt_back">Back</string>

@@ -15,7 +15,7 @@ public class Rooms extends AppCompatActivity implements View.OnClickListener{
     public static String room;
     public static double amount;
     public static int imgSrc;
-    private final static double[] ROOM_PRICES = {1000, 2000, 3000, 4000}; //to edit
+    private final static double[] ROOM_PRICES = {1500, 2500, 3500, 4500}; //to edit
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
