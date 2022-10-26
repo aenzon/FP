@@ -51,7 +51,7 @@ public class Payment extends AppCompatActivity {
                 DecimalFormat form = new DecimalFormat("0.00");
 
                 Double change = (Double.parseDouble(txtPayment.getText().toString())) - Double.parseDouble(txtTotal.getText().toString());
-                txtChange.setText(form.format(change));
+                txtChange.setText("Php ".concat(form.format(change)));
             }
         });
     }
