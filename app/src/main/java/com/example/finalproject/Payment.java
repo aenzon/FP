@@ -51,6 +51,9 @@ public class Payment extends AppCompatActivity {
 
                 Double change = (Double.parseDouble(txtPayment.getText().toString())) - Double.parseDouble(txtTotal.getText().toString());
                 txtChange.setText(form.format(change));
+
+                Intent i = new Intent(Payment.this, Ref.class);
+                startActivity(i);
             }
         });
     }
