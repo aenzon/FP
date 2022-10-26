@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <TextView
-        android:id="@+id/txtNameLbl"
+        android:id="@+id/txtNameOut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.548" />
 
     <TextView
-        android:id="@+id/txtContactLbl"
+        android:id="@+id/txtContactOut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.658" />
 
     <TextView
-        android:id="@+id/txtCkinLbl"
+        android:id="@+id/txtCkinOut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -128,7 +128,7 @@
         app:layout_constraintVertical_bias="0.753" />
 
     <TextView
-        android:id="@+id/txtCkoutLbl"
+        android:id="@+id/txtCkoutOut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -158,7 +158,7 @@
         app:layout_constraintVertical_bias="0.819" />
 
     <TextView
-        android:id="@+id/txtGuestLbl"
+        android:id="@+id/txtGuestOut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -189,7 +189,7 @@
         app:layout_constraintVertical_bias="0.466" />
 
     <TextView
-        android:id="@+id/txtRoom"
+        android:id="@+id/txtRoomOut"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"

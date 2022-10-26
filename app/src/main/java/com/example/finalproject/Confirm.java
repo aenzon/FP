@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,19 @@ public class Confirm extends AppCompatActivity {
         setContentView(R.layout.activity_confirm);
         Button btnToRooms = findViewById(R.id.btnToRoom);
         Button btnToPay = findViewById(R.id.btnToPay);
+        TextView txtNameOut = findViewById(R.id.txtNameOut);
+        TextView txtContactOut = findViewById(R.id.txtContactOut);
+        TextView txtCkinOut = findViewById(R.id.txtCkinOut);
+        TextView txtCkoutOut = findViewById(R.id.txtCkoutOut);
+        TextView txtGuestOut = findViewById(R.id.txtGuestOut);
+        TextView txtRoomOut = findViewById(R.id.txtRoomOut);
+
+        txtNameOut.setText(Form.guestName);
+        txtContactOut.setText(Form.guestContact);
+        txtCkinOut.setText(Form.guestIn);
+        txtCkoutOut.setText(Form.guestOut);
+        txtGuestOut.setText(Form.qtyGuest);
+        txtRoomOut.setText(Rooms.room);
 
         btnToRooms.setOnClickListener(new View.OnClickListener() {
             @Override
