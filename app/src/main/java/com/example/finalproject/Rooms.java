@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat;
 public class Rooms extends AppCompatActivity implements View.OnClickListener{
     public static String room;
     public static double amount;
+    public static int imgSrc;
     private final static double[] ROOM_PRICES = {1000, 2000, 3000, 4000}; //to edit
 
     @Override
@@ -76,18 +77,22 @@ public class Rooms extends AppCompatActivity implements View.OnClickListener{
             case R.id.btnSingle:
                 room = getString(R.string.rm_type1);
                 amount = Form.daysStay * ROOM_PRICES[0];
+                imgSrc = R.drawable.room1;
                 break;
             case R.id.btnDouble:
                 room = getString(R.string.rm_type2);
                 amount = Form.daysStay * ROOM_PRICES[1];
+                imgSrc = R.drawable.room2;
                 break;
             case R.id.btnTriple:
                 room = getString(R.string.rm_type3);
                 amount = Form.daysStay * ROOM_PRICES[2];
+                imgSrc = R.drawable.room3;
                 break;
             case R.id.btnQuad:
                 room = getString(R.string.rm_type4);
                 amount = Form.daysStay * ROOM_PRICES[3];
+                imgSrc = R.drawable.room4;
                 break;
         }
         Intent i = new Intent(this, Confirm.class);

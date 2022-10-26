@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -24,6 +25,7 @@ public class Confirm extends AppCompatActivity {
         TextView txtCkoutOut = findViewById(R.id.txtCkoutOut);
         TextView txtGuestOut = findViewById(R.id.txtGuestOut);
         TextView txtRoomOut = findViewById(R.id.txtRoomOut);
+        ImageView imgRoom = findViewById(R.id.imgRoom);
 
         txtNameOut.setText(Form.guestName);
         txtContactOut.setText(Form.guestContact);
@@ -31,6 +33,7 @@ public class Confirm extends AppCompatActivity {
         txtCkoutOut.setText(Form.guestOut);
         txtGuestOut.setText(Form.qtyGuest);
         txtRoomOut.setText(Rooms.room);
+        imgRoom.setImageResource(Rooms.imgSrc);
 
         btnToRooms.setOnClickListener(new View.OnClickListener() {
             @Override
