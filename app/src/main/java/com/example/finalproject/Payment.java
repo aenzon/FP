@@ -28,7 +28,7 @@ public class Payment extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Payment.this, Rooms.class);
+                Intent i = new Intent(Payment.this, Confirm.class);
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener() {
