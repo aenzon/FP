@@ -27,7 +27,8 @@ public class Payment extends AppCompatActivity {
         btnConfirm = findViewById(R.id.btn_Confirm);
         btnHome = findViewById(R.id.btn_Home);
 
-        txtTotal.setText(String.valueOf(Rooms.amount));
+        DecimalFormat amountFormat = new DecimalFormat("0.00");
+        txtTotal.setText("Php ".concat(amountFormat.format(Rooms.amount)));
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
