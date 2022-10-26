@@ -4,32 +4,40 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Payment extends AppCompatActivity {
+    TextView txtTotal, txtPayment, txtChange;
+    Button btnBack, btnConfirm, btnHome;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
-    }
-    public void showAct(View v){
-        String btnTxt;
-        btnTxt = ((Button) v).getText().toString();
 
-        if(btnTxt.equals("Confirm")){
-            Intent i = new Intent(this, Ref.class);
-            startActivity(i);
-        }
-        if(btnTxt.equals("Back")){
-            Intent i = new Intent(this, Confirm.class);
-            startActivity(i);
-        }
-        if(btnTxt.equals("Home")){
-            Intent i = new Intent(this, MainActivity.class);
-            startActivity(i);
-        }
+        txtTotal = findViewById(R.id.txt_Total);
+        txtPayment = findViewById(R.id.txt_Payment);
+        txtChange = findViewById(R.id.txt_Change);
+        btnBack = findViewById(R.id.btn_Back);
+        btnConfirm = findViewById(R.id.btn_Confirm);
+        btnHome = findViewById(R.id.btn_Home);
 
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Payment.this, Rooms.class);
+            }
+        });
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Payment.this, MainActivity.class);
+            }
+        });
     }
+
+
 }
