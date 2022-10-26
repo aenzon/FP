@@ -29,12 +29,14 @@ public class Payment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Payment.this, Confirm.class);
+                startActivity(i);
             }
         });
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Payment.this, MainActivity.class);
+                startActivity(i);
             }
         });
     }
