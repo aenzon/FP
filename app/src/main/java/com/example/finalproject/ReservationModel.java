@@ -1,12 +1,10 @@
 package com.example.finalproject;
 
 public class ReservationModel {
-    private int id;
-    private String name, contact, guests, ckin, ckout, room;
+    private String id, name, contact, guests, ckin, ckout, room;
     private int stay;
 
-    public ReservationModel(int id, String name, String contact, String guests, String ckin, String ckout, String room, int stay) {
-        this.id = id;
+    public ReservationModel(String name, String contact, String guests, String ckin, String ckout, String room, int stay) {
         this.name = name;
         this.contact = contact;
         this.guests = guests;
@@ -33,11 +31,11 @@ public class ReservationModel {
                 '}';
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
