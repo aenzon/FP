@@ -24,7 +24,7 @@ public class RefNum extends AppCompatActivity {
     EditText reference;
     Button next, cancel;
 
-    ReservationModel rm = new ReservationModel();
+    public static ReservationModel rm = new ReservationModel();
 
 
     @Override
