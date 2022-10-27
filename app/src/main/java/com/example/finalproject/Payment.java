@@ -33,7 +33,7 @@ public class Payment extends AppCompatActivity {
         btnConfirm = findViewById(R.id.btn_Confirm);
         btnHome = findViewById(R.id.btn_Home);
 
-        DecimalFormat form = new DecimalFormat("0,000.00");
+        DecimalFormat form = new DecimalFormat("0.00");
         txtTotal.setText(form.format(Rooms.amount));
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +58,7 @@ public class Payment extends AppCompatActivity {
                 if(payment.isEmpty()){
                     Toast.makeText(Payment.this, "Enter payment", Toast.LENGTH_SHORT).show();
                 } else if(ch.isEmpty()){
-                    DecimalFormat form = new DecimalFormat("0,000.00");
+                    DecimalFormat form = new DecimalFormat("0.00");
                     Double change = (Double.parseDouble(payment)) - Rooms.amount;
                     txtChange.setText(form.format(change));
 
