@@ -82,18 +82,6 @@ public class Payment extends AppCompatActivity {
                     startActivity(i);
                 }
 
-
-
-
-
-
-
-
-
-
-
-
-
             }
         });
     }
