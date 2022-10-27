@@ -47,6 +47,7 @@
         android:onClick="showActivity"
         android:text="Next"
         android:textColor="@android:color/secondary_text_light"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
