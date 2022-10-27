@@ -5,9 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 import java.text.DecimalFormat;
 
@@ -54,6 +59,23 @@ public class Payment extends AppCompatActivity {
 
                 Intent i = new Intent(Payment.this, Ref.class);
                 startActivity(i);
+
+
+                // for trial
+                ReservationModel rm = new ReservationModel(Form.guestName, Form.guestContact, Form.qtyGuest, Form.guestIn, Form.guestOut, Rooms.room, Form.daysStay);
+                DAOReservation dao = new DAOReservation();
+                dao.add(rm).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()){
+                            Toast.makeText(Payment.this, "Reservation Successful", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(Payment.this, "Failed to add reservation", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }); // up to here
+
+
             }
         });
     }
