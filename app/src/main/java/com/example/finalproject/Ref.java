@@ -47,7 +47,7 @@ public class Ref extends AppCompatActivity {
                 ClipData clip = ClipData.newPlainText("Copy", reference.getText().toString()); //To add data to the clipboard, you create a ClipData object that contains both a description of the data and the data itself.
                 clipboard.setPrimaryClip(clip); // This creates a ClippedItem holding the given text and sets it as the primary clip
 
-                Toast.makeText(Ref.this, "Copied to clipboard!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Ref.this, "Copied in clipboard!", Toast.LENGTH_SHORT).show();
             }
         });
     }
