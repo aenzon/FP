@@ -139,7 +139,9 @@ public class Form extends AppCompatActivity {
     private void updateCkin(){
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy", Locale.US);
         txtCkin.setText(dateFormat.format(cal.getTime()));
+        txtCkout.setText("");
         d1 = cal.getTime();
+
     }
 
 }
