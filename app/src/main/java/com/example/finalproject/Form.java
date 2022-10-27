@@ -66,6 +66,7 @@ public class Form extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DatePickerDialog dpCkin = new DatePickerDialog(Form.this, ckinDate, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
+                dpCkin.getDatePicker().setMinDate(System.currentTimeMillis());
                 dpCkin.show();
             }
         });
@@ -85,6 +86,7 @@ public class Form extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DatePickerDialog dpCkout = new DatePickerDialog(Form.this, ckoutDate, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH));
+                dpCkout.getDatePicker().setMinDate(d1.getTime() + (1000 * 60 * 60 * 24));
                 dpCkout.show();
             }
         });
@@ -138,6 +140,7 @@ public class Form extends AppCompatActivity {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy", Locale.US);
         txtCkin.setText(dateFormat.format(cal.getTime()));
         d1 = cal.getTime();
+        Toast.makeText(this,String.valueOf(d1.getTime()), Toast.LENGTH_LONG).show();
     }
 
 }
