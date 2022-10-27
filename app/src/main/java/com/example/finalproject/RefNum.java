@@ -24,6 +24,9 @@ public class RefNum extends AppCompatActivity {
     EditText reference;
     Button next, cancel;
 
+    ReservationModel rm = new ReservationModel();
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,18 +47,33 @@ public class RefNum extends AppCompatActivity {
                     Toast.makeText(RefNum.this, "Please enter your Reference Number.", Toast.LENGTH_SHORT).show();
                 } else {
                     DAOReservation dao = new DAOReservation();
-                    ReservationModel rm = dao.get(ref);
+                    dao.get(ref).addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<DataSnapshot> task) {
+                            if(task.isSuccessful()){
+                                if(task.getResult().exists()){
+                                    DataSnapshot dataSnapshot = task.getResult();
+                                    rm.setId(String.valueOf(dataSnapshot.child("id").getValue()));
+                                    rm.setName(String.valueOf(dataSnapshot.child("name").getValue()));
+                                    rm.setContact(String.valueOf(dataSnapshot.child("contact").getValue()));
+                                    rm.setGuests(String.valueOf(dataSnapshot.child("guests").getValue()));
+                                    rm.setCkin(String.valueOf(dataSnapshot.child("ckin").getValue()));
+                                    rm.setCkout(String.valueOf(dataSnapshot.child("ckout").getValue()));
+                                    rm.setRoom(String.valueOf(dataSnapshot.child("room").getValue()));
+                                    Integer temp = Integer.parseInt(dataSnapshot.child("stay").getValue().toString());
+                                    rm.setStay(temp);
 
-                    if (String.valueOf(reference.getText()).equals(Payment.refNum)) {
-                        Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(getApplicationContext(), Reserve.class);
-                        startActivity(i);
-
-                    } else{
-                        Toast.makeText(RefNum.this, "Failed", Toast.LENGTH_SHORT).show();
-                    }
-
-
+                                    Toast.makeText(RefNum.this, "Record found", Toast.LENGTH_SHORT).show();
+                                    Intent i = new Intent(RefNum.this, Reserve.class);
+                                    startActivity(i);
+                                } else {
+                                    Toast.makeText(RefNum.this, "No record found", Toast.LENGTH_SHORT).show();
+                                }
+                            } else{
+                                System.out.println("Error in retrieving data");
+                            }
+                        }
+                    });
                 }
 
             }
