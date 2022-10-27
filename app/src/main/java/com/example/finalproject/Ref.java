@@ -43,9 +43,9 @@ public class Ref extends AppCompatActivity {
         clip.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE); //
-                ClipData clip = ClipData.newPlainText("Copy", reference.getText().toString());
-                clipboard.setPrimaryClip(clip);
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE); //invoking getSystemService(CLIPBOARD_SERVICE)
+                ClipData clip = ClipData.newPlainText("Copy", reference.getText().toString()); //To add data to the clipboard, you create a ClipData object that contains both a description of the data and the data itself.
+                clipboard.setPrimaryClip(clip); // This creates a ClippedItem holding the given text and sets it as the primary clip
 
                 Toast.makeText(Ref.this, "Copied to clipboard!", Toast.LENGTH_SHORT).show();
             }
