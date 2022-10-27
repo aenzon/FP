@@ -140,7 +140,6 @@ public class Form extends AppCompatActivity {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy", Locale.US);
         txtCkin.setText(dateFormat.format(cal.getTime()));
         d1 = cal.getTime();
-        Toast.makeText(this,String.valueOf(d1.getTime()), Toast.LENGTH_LONG).show();
     }
 
 }
