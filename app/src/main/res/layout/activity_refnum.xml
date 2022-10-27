@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_dark">
 
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="143dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="showActivity"
+        android:text="cancel"
+        android:textColor="@android:color/secondary_text_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
