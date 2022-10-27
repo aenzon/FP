@@ -43,7 +43,6 @@ public class RefNum extends AppCompatActivity {
                     Toast.makeText(RefNum.this, "Please enter your Reference Number.", Toast.LENGTH_SHORT).show();
                 } else {
 
-
                 }
 
             }
