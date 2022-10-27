@@ -67,4 +67,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.681" />
+
+    <ImageButton
+        android:id="@+id/btnClip"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/black"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399"
+        app:srcCompat="@drawable/images" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
