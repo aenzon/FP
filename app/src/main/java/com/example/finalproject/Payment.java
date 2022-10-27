@@ -58,9 +58,14 @@ public class Payment extends AppCompatActivity {
                 if(payment.isEmpty()){
                     Toast.makeText(Payment.this, "Enter payment", Toast.LENGTH_SHORT).show();
                 } else if(ch.isEmpty()){
-                    DecimalFormat form = new DecimalFormat("0.00");
-                    Double change = (Double.parseDouble(payment)) - Rooms.amount;
-                    txtChange.setText(form.format(change));
+                    double pmt = Double.parseDouble(payment);
+                    if(pmt < Rooms.amount){
+                        Toast.makeText(Payment.this, "Payment insufficient", Toast.LENGTH_SHORT).show();
+                    } else{
+                        DecimalFormat form = new DecimalFormat("0.00");
+                        Double change = pmt - Rooms.amount;
+                        txtChange.setText(form.format(change));
+                    }
 
                 } else {
 
