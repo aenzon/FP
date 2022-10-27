@@ -1,13 +1,20 @@
 package com.example.finalproject;
 
+import static com.example.finalproject.Payment.refNum;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 public class RefNum extends AppCompatActivity {
 
@@ -21,17 +28,33 @@ public class RefNum extends AppCompatActivity {
 
         reference = findViewById(R.id.txtReference);
         next = findViewById(R.id.btnNext);
-    }
 
-    public void showActivity(View v)
-    {
-        String btnHome;
-        btnHome = ((Button) v).getText().toString();
-
-        if(btnHome.equals("Next")){
-            Intent i = new Intent(this, Reserve.class);
-            startActivity(i);
-        }
+        next.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                String ref = reference.getText().toString();
+                if(ref.isEmpty()) {
+                    Toast.makeText(RefNum.this, "Please enter your Reference Number.", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    ReservationModel rm = new ReservationModel(Form.guestName, Form.guestContact, Form.qtyGuest, Form.guestIn, Form.guestOut, Rooms.room, Form.daysStay);
+                    DAOReservation dao = new DAOReservation();
+                    dao.add(rm).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                refNum = rm.getId();
+                                Toast.makeText(RefNum.this, "Success" + refNum, Toast.LENGTH_SHORT).show();
+                                Intent i = new Intent(RefNum.this, Reserve.class);
+                                startActivity(i);
+                            } else {
+                                Toast.makeText(RefNum.this, "Not existing Reference Number.", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                }
+            }
+        });
     }
 }
 

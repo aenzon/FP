@@ -29,7 +29,7 @@ public class Ref extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                    Intent i = new Intent(Ref.this, Reserve.class);
+                    Intent i = new Intent(Ref.this, MainActivity.class);
                     startActivity(i);
             }
         });
