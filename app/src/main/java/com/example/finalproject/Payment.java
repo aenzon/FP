@@ -72,16 +72,15 @@ public class Payment extends AppCompatActivity {
                             if (task.isSuccessful()){
                                 refNum = rm.getId();
                                 Toast.makeText(Payment.this, "Reservation Successful, Reference number is: " + refNum, Toast.LENGTH_SHORT).show();
+                                Intent i = new Intent(Payment.this, Ref.class);
+                                startActivity(i);
                             } else {
                                 Toast.makeText(Payment.this, "Failed to add reservation", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
 
-                    Intent i = new Intent(Payment.this, Ref.class);
-                    startActivity(i);
                 }
-
             }
         });
     }
